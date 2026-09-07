@@ -28,11 +28,11 @@
     *{
       box-sizing:border-box;
       margin:0;
-      padding:0
+      padding:0;
     }
 
     html{
-      scroll-behavior:smooth
+      scroll-behavior:smooth;
     }
 
     body{
@@ -69,12 +69,10 @@
 
     .container{
       width:min(1180px,calc(100% - 40px));
-      margin:auto
+      margin:auto;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     header{
       position:sticky;
@@ -82,7 +80,7 @@
       z-index:20;
       background:rgba(3,10,20,.82);
       backdrop-filter:blur(18px);
-      border-bottom:1px solid var(--border)
+      border-bottom:1px solid var(--border);
     }
 
     nav{
@@ -90,28 +88,28 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:25px
+      gap:25px;
     }
 
     .logo{
       font-size:24px;
       font-weight:900;
-      letter-spacing:-1px
+      letter-spacing:-1px;
     }
 
     .logo span{
-      color:var(--blue)
+      color:var(--blue);
     }
 
     .navlinks{
       display:flex;
       gap:30px;
       color:#ded4bd;
-      font-size:14px
+      font-size:14px;
     }
 
     .navlinks a:hover{
-      color:#fff
+      color:#fff;
     }
 
     .nav-actions{
@@ -133,9 +131,7 @@
       color:#fff;
     }
 
-    /* =========================
-       BUTTONS
-    ========================= */
+    /* BUTTONS */
 
     .btn{
       display:inline-flex;
@@ -147,7 +143,7 @@
       font-weight:700;
       border:1px solid transparent;
       transition:.2s;
-      cursor:pointer
+      cursor:pointer;
     }
 
     .btn-primary{
@@ -162,7 +158,7 @@
 
     .btn-primary:hover{
       transform:translateY(-2px);
-      box-shadow:0 14px 40px rgba(255,184,0,.32)
+      box-shadow:0 14px 40px rgba(255,184,0,.32);
     }
 
     .btn-outline{
@@ -172,19 +168,17 @@
     }
 
     .btn-outline:hover{
-      background:#3a2b05
+      background:#3a2b05;
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero{
       min-height:620px;
       display:flex;
       align-items:center;
       position:relative;
-      overflow:hidden
+      overflow:hidden;
     }
 
     .hero:before{
@@ -199,7 +193,7 @@
           rgba(3,10,20,.25) 78%,
           var(--bg) 100%
         );
-      z-index:1
+      z-index:1;
     }
 
     .hero-image{
@@ -210,14 +204,14 @@
       height:100%;
       object-fit:cover;
       object-position:center;
-      opacity:.68
+      opacity:.68;
     }
 
     .hero-content{
       position:relative;
       z-index:2;
       max-width:610px;
-      padding:80px 0
+      padding:80px 0;
     }
 
     .eyebrow{
@@ -226,65 +220,63 @@
       text-transform:uppercase;
       color:#ffc400;
       font-weight:800;
-      margin-bottom:16px
+      margin-bottom:16px;
     }
 
     h1{
       font-size:clamp(44px,6vw,72px);
       line-height:1.02;
       letter-spacing:-3px;
-      margin-bottom:20px
+      margin-bottom:20px;
     }
 
     h1 span{
-      color:#ffc400
+      color:#ffc400;
     }
 
     .hero p{
       font-size:18px;
       color:#c9bea5;
       max-width:560px;
-      margin-bottom:30px
+      margin-bottom:30px;
     }
 
     .buttons{
       display:flex;
       gap:14px;
-      flex-wrap:wrap
+      flex-wrap:wrap;
     }
 
     .stats{
       display:flex;
       gap:0;
       margin-top:44px;
-      flex-wrap:wrap
+      flex-wrap:wrap;
     }
 
     .stat{
       padding:0 28px 0 0;
       margin-right:28px;
-      border-right:1px solid var(--border)
+      border-right:1px solid var(--border);
     }
 
     .stat:last-child{
-      border:0
+      border:0;
     }
 
     .stat strong{
       display:block;
-      font-size:15px
+      font-size:15px;
     }
 
     .stat small{
-      color:var(--muted)
+      color:var(--muted);
     }
 
-    /* =========================
-       SECTIONS
-    ========================= */
+    /* SECTIONS */
 
     section{
-      padding:82px 0
+      padding:82px 0;
     }
 
     .section-head{
@@ -292,31 +284,29 @@
       justify-content:space-between;
       align-items:end;
       gap:20px;
-      margin-bottom:38px
+      margin-bottom:38px;
     }
 
     .section-head h2{
       font-size:38px;
       line-height:1.1;
-      letter-spacing:-1.5px
+      letter-spacing:-1.5px;
     }
 
     .section-head p{
       color:var(--muted);
-      max-width:520px
+      max-width:520px;
     }
 
     .grid{
       display:grid;
-      gap:16px
+      gap:16px;
     }
 
-    /* =========================
-       FEATURES
-    ========================= */
+    /* FEATURES */
 
     .features{
-      grid-template-columns:repeat(3,1fr)
+      grid-template-columns:repeat(3,1fr);
     }
 
     .card{
@@ -330,7 +320,7 @@
       border-radius:16px;
       padding:28px;
       box-shadow:
-        inset 0 1px rgba(255,255,255,.02)
+        inset 0 1px rgba(255,255,255,.02);
     }
 
     .icon{
@@ -342,32 +332,30 @@
       background:rgba(255,196,0,.12);
       color:#ffd21a;
       font-size:22px;
-      margin-bottom:18px
+      margin-bottom:18px;
     }
 
     .card h3{
       font-size:18px;
-      margin-bottom:8px
+      margin-bottom:8px;
     }
 
     .card p{
       font-size:14px;
-      color:var(--muted)
+      color:var(--muted);
     }
 
-    /* =========================
-       GAMES
-    ========================= */
+    /* GAMES */
 
     .game-grid{
-      grid-template-columns:1fr 1fr
+      grid-template-columns:1fr 1fr;
     }
 
     .game-card{
       min-height:245px;
       position:relative;
       overflow:hidden;
-      padding:0
+      padding:0;
     }
 
     .game-card img{
@@ -376,7 +364,7 @@
       object-fit:cover;
       position:absolute;
       inset:0;
-      opacity:.45
+      opacity:.45;
     }
 
     .game-card .overlay{
@@ -388,41 +376,39 @@
           #061223 8%,
           rgba(6,18,35,.55),
           rgba(6,18,35,.2)
-        )
+        );
     }
 
     .game-content{
       position:relative;
       z-index:2;
       padding:32px;
-      max-width:440px
+      max-width:440px;
     }
 
     .game-content h3{
-      font-size:32px
+      font-size:32px;
     }
 
     .game-content p{
       margin:8px 0 18px;
-      color:#c9bea5
+      color:#c9bea5;
     }
 
-    /* =========================
-       PRICING
-    ========================= */
+    /* PRICING */
 
     .pricing{
-      grid-template-columns:repeat(4,1fr)
+      grid-template-columns:repeat(4,1fr);
     }
 
     .price{
-      position:relative
+      position:relative;
     }
 
     .price.popular{
       border-color:#ffc400;
       box-shadow:
-        0 0 35px rgba(255,196,0,.12)
+        0 0 35px rgba(255,196,0,.12);
     }
 
     .badge{
@@ -438,41 +424,39 @@
     }
 
     .price h3{
-      font-size:20px
+      font-size:20px;
     }
 
     .price .cost{
       font-size:30px;
       font-weight:900;
-      margin:14px 0
+      margin:14px 0;
     }
 
     .price .cost small{
       font-size:12px;
       color:var(--muted);
-      font-weight:500
+      font-weight:500;
     }
 
     .price ul{
       list-style:none;
       margin:20px 0 25px;
       color:#c9bea5;
-      font-size:14px
+      font-size:14px;
     }
 
     .price li{
-      padding:7px 0
+      padding:7px 0;
     }
 
     .price li:before{
       content:"✓";
       color:#17a4ff;
-      margin-right:9px
+      margin-right:9px;
     }
 
-    /* =========================
-       CTA
-    ========================= */
+    /* CTA */
 
     .cta{
       padding:55px;
@@ -485,7 +469,7 @@
           #3a2900,
           #171208 70%
         );
-      border:1px solid #b88600
+      border:1px solid #b88600;
     }
 
     .cta:after{
@@ -497,42 +481,38 @@
       right:-120px;
       top:-180px;
       background:rgba(255,196,0,.15);
-      filter:blur(5px)
+      filter:blur(5px);
     }
 
     .cta h2{
       font-size:40px;
       position:relative;
-      z-index:1
+      z-index:1;
     }
 
     .cta p{
       color:#c9bea5;
       margin:10px 0 24px;
       position:relative;
-      z-index:1
+      z-index:1;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer{
       border-top:1px solid var(--border);
       padding:28px 0;
       color:#8f8369;
-      font-size:13px
+      font-size:13px;
     }
 
     .footer-row{
       display:flex;
       justify-content:space-between;
-      gap:20px
+      gap:20px;
     }
 
-    /* =========================
-       AUTH OVERLAY
-    ========================= */
+    /* AUTH */
 
     .auth-overlay{
       position:fixed;
@@ -680,9 +660,7 @@
       font-weight:700;
     }
 
-    /* =========================
-       ACCOUNT
-    ========================= */
+    /* ACCOUNT */
 
     .account-info{
       padding:18px;
@@ -711,24 +689,22 @@
       margin-top:4px;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media(max-width:900px){
 
       .navlinks{
-        display:none
+        display:none;
       }
 
       .features,
       .pricing{
-        grid-template-columns:1fr 1fr
+        grid-template-columns:1fr 1fr;
       }
 
       .hero-image{
         width:100%;
-        opacity:.3
+        opacity:.3;
       }
 
       .hero:before{
@@ -737,24 +713,24 @@
             90deg,
             var(--bg),
             rgba(3,10,20,.7)
-          )
+          );
       }
     }
 
     @media(max-width:620px){
 
       .container{
-        width:min(100% - 24px,1180px)
+        width:min(100% - 24px,1180px);
       }
 
       .login{
-        display:none
+        display:none;
       }
 
       .features,
       .pricing,
       .game-grid{
-        grid-template-columns:1fr
+        grid-template-columns:1fr;
       }
 
       .nav-actions{
@@ -767,50 +743,50 @@
       }
 
       .hero{
-        min-height:650px
+        min-height:650px;
       }
 
       .hero-content{
-        padding:55px 0
+        padding:55px 0;
       }
 
       h1{
-        font-size:44px
+        font-size:44px;
       }
 
       .stats{
-        gap:20px
+        gap:20px;
       }
 
       .stat{
         border:0;
         margin:0;
-        padding:0
+        padding:0;
       }
 
       .section-head{
-        display:block
+        display:block;
       }
 
       .section-head h2{
         font-size:32px;
-        margin-bottom:12px
+        margin-bottom:12px;
       }
 
       .cta{
-        padding:34px 25px
+        padding:34px 25px;
       }
 
       .cta h2{
-        font-size:31px
+        font-size:31px;
       }
 
       .footer-row{
-        display:block
+        display:block;
       }
 
       .footer-row div+div{
-        margin-top:10px
+        margin-top:10px;
       }
 
       .auth-box{
@@ -822,13 +798,8 @@
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
   <div class="container">
-
     <nav>
 
       <a class="logo" href="#">
@@ -836,32 +807,15 @@
       </a>
 
       <div class="navlinks">
-
-        <a href="#">
-          Главная
-        </a>
-
-        <a href="#tariffs">
-          Тарифы
-        </a>
-
-        <a href="#features">
-          Возможности
-        </a>
-
-        <a href="#games">
-          Серверы
-        </a>
-
-        <a href="#faq">
-          FAQ
-        </a>
-
+        <a href="#">Главная</a>
+        <a href="#tariffs">Тарифы</a>
+        <a href="#features">Возможности</a>
+        <a href="#games">Серверы</a>
+        <a href="#faq">FAQ</a>
       </div>
 
       <div class="nav-actions">
 
-        <!-- КНОПКА ВХОД -->
         <button
           class="login"
           id="loginButton"
@@ -871,7 +825,6 @@
           Войти
         </button>
 
-        <!-- КНОПКА РЕГИСТРАЦИЯ -->
         <button
           class="btn btn-primary"
           id="registerButton"
@@ -881,7 +834,6 @@
           Регистрация →
         </button>
 
-        <!-- КНОПКА КАБИНЕТ -->
         <button
           class="btn btn-primary"
           id="accountButton"
@@ -895,18 +847,10 @@
       </div>
 
     </nav>
-
   </div>
 </header>
 
-
-<!-- =========================
-     MAIN
-========================= -->
-
 <main>
-
-  <!-- HERO -->
 
   <section class="hero">
 
@@ -979,8 +923,6 @@
   </section>
 
 
-  <!-- FEATURES -->
-
   <section id="features">
 
     <div class="container">
@@ -988,17 +930,14 @@
       <div class="section-head">
 
         <div>
-
           <div class="eyebrow">
             Почему выбирают нас?
           </div>
 
           <h2>
-            Всё, что нужно
-            <br>
+            Всё, что нужно<br>
             для твоего сервера
           </h2>
-
         </div>
 
         <p>
@@ -1011,104 +950,39 @@
       <div class="grid features">
 
         <article class="card">
-
-          <div class="icon">
-            🚀
-          </div>
-
-          <h3>
-            Мгновенный запуск
-          </h3>
-
-          <p>
-            Запусти сервер всего за несколько секунд после оплаты.
-          </p>
-
+          <div class="icon">🚀</div>
+          <h3>Мгновенный запуск</h3>
+          <p>Запусти сервер всего за несколько секунд после оплаты.</p>
         </article>
 
-
         <article class="card">
-
-          <div class="icon">
-            🎛
-          </div>
-
-          <h3>
-            Удобная панель
-          </h3>
-
-          <p>
-            Управляй сервером через современную панель управления.
-          </p>
-
+          <div class="icon">🎛</div>
+          <h3>Удобная панель</h3>
+          <p>Управляй сервером через современную панель управления.</p>
         </article>
 
-
         <article class="card">
-
-          <div class="icon">
-            🛡
-          </div>
-
-          <h3>
-            Защита от DDoS
-          </h3>
-
-          <p>
-            Надёжная защита инфраструктуры и игровых серверов.
-          </p>
-
+          <div class="icon">🛡</div>
+          <h3>Защита от DDoS</h3>
+          <p>Надёжная защита инфраструктуры и игровых серверов.</p>
         </article>
 
-
         <article class="card">
-
-          <div class="icon">
-            📁
-          </div>
-
-          <h3>
-            Полный доступ
-          </h3>
-
-          <p>
-            Файлы, база данных, server.cfg, плагины и моды — всё под контролем.
-          </p>
-
+          <div class="icon">📁</div>
+          <h3>Полный доступ</h3>
+          <p>Файлы, база данных, server.cfg, плагины и моды — всё под контролем.</p>
         </article>
 
-
         <article class="card">
-
-          <div class="icon">
-            ⚙
-          </div>
-
-          <h3>
-            Плагины и моды
-          </h3>
-
-          <p>
-            Устанавливай и управляй необходимыми компонентами в пару кликов.
-          </p>
-
+          <div class="icon">⚙</div>
+          <h3>Плагины и моды</h3>
+          <p>Устанавливай и управляй необходимыми компонентами в пару кликов.</p>
         </article>
 
-
         <article class="card">
-
-          <div class="icon">
-            🎧
-          </div>
-
-          <h3>
-            Поддержка 24/7
-          </h3>
-
-          <p>
-            Поможем разобраться с настройкой и работой сервера.
-          </p>
-
+          <div class="icon">🎧</div>
+          <h3>Поддержка 24/7</h3>
+          <p>Поможем разобраться с настройкой и работой сервера.</p>
         </article>
 
       </div>
@@ -1118,8 +992,6 @@
   </section>
 
 
-  <!-- GAMES -->
-
   <section id="games">
 
     <div class="container">
@@ -1127,7 +999,6 @@
       <div class="section-head">
 
         <div>
-
           <div class="eyebrow">
             Платформы
           </div>
@@ -1135,13 +1006,11 @@
           <h2>
             Выбирай свою игру
           </h2>
-
         </div>
 
       </div>
 
       <div class="grid game-grid">
-
 
         <article class="card game-card">
 
@@ -1154,9 +1023,7 @@
 
           <div class="game-content">
 
-            <h3>
-              SA-MP
-            </h3>
+            <h3>SA-MP</h3>
 
             <p>
               Классический San Andreas Multiplayer
@@ -1186,9 +1053,7 @@
 
           <div class="game-content">
 
-            <h3>
-              CRMP
-            </h3>
+            <h3>CRMP</h3>
 
             <p>
               Criminal Russia Multiplayer —
@@ -1213,8 +1078,6 @@
   </section>
 
 
-  <!-- TARIFFS -->
-
   <section id="tariffs">
 
     <div class="container">
@@ -1234,43 +1097,27 @@
         </div>
 
         <p>
-          От небольшого сервера для старта до мощного тарифа для крупного проекта.
+          От небольшого сервера для старта до мощного
+          тарифа для крупного проекта.
         </p>
 
       </div>
 
-
       <div class="grid pricing">
-
 
         <article class="card price">
 
-          <h3>
-            Start
-          </h3>
+          <h3>Start</h3>
 
           <div class="cost">
             99 ₽ <small>/ мес</small>
           </div>
 
           <ul>
-
-            <li>
-              50 слотов
-            </li>
-
-            <li>
-              SSD-хранилище
-            </li>
-
-            <li>
-              Базовая защита
-            </li>
-
-            <li>
-              Панель управления
-            </li>
-
+            <li>50 слотов</li>
+            <li>SSD-хранилище</li>
+            <li>Базовая защита</li>
+            <li>Панель управления</li>
           </ul>
 
           <a
@@ -1289,32 +1136,17 @@
             ПОПУЛЯРНЫЙ
           </div>
 
-          <h3>
-            Standard
-          </h3>
+          <h3>Standard</h3>
 
           <div class="cost">
             199 ₽ <small>/ мес</small>
           </div>
 
           <ul>
-
-            <li>
-              100 слотов
-            </li>
-
-            <li>
-              SSD-хранилище
-            </li>
-
-            <li>
-              DDoS-защита
-            </li>
-
-            <li>
-              Бэкапы
-            </li>
-
+            <li>100 слотов</li>
+            <li>SSD-хранилище</li>
+            <li>DDoS-защита</li>
+            <li>Бэкапы</li>
           </ul>
 
           <a
@@ -1329,32 +1161,17 @@
 
         <article class="card price">
 
-          <h3>
-            Pro
-          </h3>
+          <h3>Pro</h3>
 
           <div class="cost">
             399 ₽ <small>/ мес</small>
           </div>
 
           <ul>
-
-            <li>
-              250 слотов
-            </li>
-
-            <li>
-              Быстрый SSD
-            </li>
-
-            <li>
-              Расширенная защита
-            </li>
-
-            <li>
-              Приоритетная поддержка
-            </li>
-
+            <li>250 слотов</li>
+            <li>Быстрый SSD</li>
+            <li>Расширенная защита</li>
+            <li>Приоритетная поддержка</li>
           </ul>
 
           <a
@@ -1369,32 +1186,17 @@
 
         <article class="card price">
 
-          <h3>
-            Premium
-          </h3>
+          <h3>Premium</h3>
 
           <div class="cost">
             799 ₽ <small>/ мес</small>
           </div>
 
           <ul>
-
-            <li>
-              500 слотов
-            </li>
-
-            <li>
-              Максимальная мощность
-            </li>
-
-            <li>
-              Расширенные бэкапы
-            </li>
-
-            <li>
-              VIP-поддержка
-            </li>
-
+            <li>500 слотов</li>
+            <li>Максимальная мощность</li>
+            <li>Расширенные бэкапы</li>
+            <li>VIP-поддержка</li>
           </ul>
 
           <a
@@ -1413,8 +1215,6 @@
   </section>
 
 
-  <!-- CTA -->
-
   <section>
 
     <div class="container">
@@ -1426,7 +1226,8 @@
         </h2>
 
         <p>
-          Создай свой SA-MP или CRMP сервер прямо сейчас и начинай развивать свой проект.
+          Создай свой SA-MP или CRMP сервер прямо сейчас
+          и начинай развивать свой проект.
         </p>
 
         <a
@@ -1444,10 +1245,6 @@
 
 </main>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer id="faq">
 
@@ -1467,7 +1264,7 @@
 
 
 <!-- =========================
-     LOGIN WINDOW
+     LOGIN
 ========================= -->
 
 <div
@@ -1493,7 +1290,6 @@
 
     </div>
 
-
     <input
       class="auth-input"
       id="loginEmail"
@@ -1501,7 +1297,6 @@
       placeholder="Email"
       autocomplete="email"
     >
-
 
     <input
       class="auth-input"
@@ -1511,12 +1306,10 @@
       autocomplete="current-password"
     >
 
-
     <div
       class="auth-message"
       id="loginMessage"
     ></div>
-
 
     <button
       class="btn btn-primary auth-submit"
@@ -1527,9 +1320,7 @@
       Войти
     </button>
 
-
     <div class="auth-switch">
-
       Нет аккаунта?
 
       <span
@@ -1537,7 +1328,6 @@
       >
         Зарегистрироваться
       </span>
-
     </div>
 
   </div>
@@ -1546,7 +1336,7 @@
 
 
 <!-- =========================
-     REGISTER WINDOW
+     REGISTER
 ========================= -->
 
 <div
@@ -1572,7 +1362,6 @@
 
     </div>
 
-
     <input
       class="auth-input"
       id="registerName"
@@ -1582,7 +1371,6 @@
       maxlength="30"
     >
 
-
     <input
       class="auth-input"
       id="registerEmail"
@@ -1590,7 +1378,6 @@
       placeholder="Email"
       autocomplete="email"
     >
-
 
     <input
       class="auth-input"
@@ -1600,7 +1387,6 @@
       autocomplete="new-password"
     >
 
-
     <input
       class="auth-input"
       id="registerPassword2"
@@ -1609,12 +1395,10 @@
       autocomplete="new-password"
     >
 
-
     <div
       class="auth-message"
       id="registerMessage"
     ></div>
-
 
     <button
       class="btn btn-primary auth-submit"
@@ -1624,7 +1408,6 @@
     >
       Создать аккаунт
     </button>
-
 
     <div class="auth-switch">
 
@@ -1644,7 +1427,7 @@
 
 
 <!-- =========================
-     ACCOUNT WINDOW
+     ACCOUNT
 ========================= -->
 
 <div
@@ -1670,7 +1453,6 @@
 
     </div>
 
-
     <div class="account-info">
 
       <div class="account-label">
@@ -1686,7 +1468,6 @@
 
     </div>
 
-
     <div class="account-info">
 
       <div class="account-label">
@@ -1701,7 +1482,6 @@
       </div>
 
     </div>
-
 
     <button
       class="btn btn-outline logout-button"
@@ -1722,753 +1502,816 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-
 <script>
 
-  /* =================================
-     SUPABASE CONFIG
-  ================================= */
+const SUPABASE_URL =
+  "https://ooetsrxsswrpipgeotoh.supabase.co";
 
-  const SUPABASE_URL =
-    "https://ooetsrxsswrpipgeotoh.supabase.co";
+const SUPABASE_KEY =
+  "sb_publishable_2cAjmck-vXpE01EU2lUlOg_yv2b6-2m";
 
-  const SUPABASE_KEY =
-    "sb_publishable_2cAjmck-vXpE01EU2lUlOg_yv2b6-2m";
-
-
-  const supabaseClient =
-    window.supabase.createClient(
-      SUPABASE_URL,
-      SUPABASE_KEY
-    );
+const supabaseClient =
+  window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
 
 
-  /* =================================
-     AUTH WINDOWS
-  ================================= */
+/* =========================
+   WINDOWS
+========================= */
 
-  function openAuth(id){
+function openAuth(id){
 
-    const modal =
-      document.getElementById(id);
+  const modal =
+    document.getElementById(id);
 
-    if(!modal){
-      return;
-    }
+  if(!modal) return;
 
-    modal.classList.add("active");
+  modal.classList.add("active");
+}
+
+
+function closeAuth(id){
+
+  const modal =
+    document.getElementById(id);
+
+  if(!modal) return;
+
+  modal.classList.remove("active");
+}
+
+
+function switchAuth(from,to){
+
+  closeAuth(from);
+
+  openAuth(to);
+}
+
+
+function openAccount(){
+
+  openAuth("accountModal");
+}
+
+
+/* =========================
+   MESSAGES
+========================= */
+
+function setMessage(id,text,type=""){
+
+  const element =
+    document.getElementById(id);
+
+  if(!element) return;
+
+  element.textContent = text;
+
+  element.className =
+    "auth-message";
+
+  if(type){
+    element.classList.add(type);
+  }
+}
+
+
+/* =========================
+   ERRORS
+========================= */
+
+function getAuthError(error){
+
+  if(!error){
+    return "Произошла неизвестная ошибка.";
   }
 
-
-  function closeAuth(id){
-
-    const modal =
-      document.getElementById(id);
-
-    if(!modal){
-      return;
-    }
-
-    modal.classList.remove("active");
-  }
+  const message =
+    String(
+      error.message || ""
+    ).toLowerCase();
 
 
-  function switchAuth(from, to){
-
-    closeAuth(from);
-    openAuth(to);
-  }
-
-
-  function openAccount(){
-
-    openAuth("accountModal");
-  }
-
-
-  /* =================================
-     MESSAGES
-  ================================= */
-
-  function setMessage(
-    id,
-    text,
-    type = ""
+  if(
+    message.includes(
+      "user already registered"
+    )
   ){
-
-    const element =
-      document.getElementById(id);
-
-    if(!element){
-      return;
-    }
-
-    element.textContent = text;
-
-    element.className =
-      "auth-message";
-
-    if(type){
-      element.classList.add(type);
-    }
+    return "Этот email уже зарегистрирован.";
   }
 
 
-  /* =================================
-     AUTH ERROR TRANSLATION
-  ================================= */
-
-  function getAuthError(error){
-
-    if(!error){
-      return "Произошла неизвестная ошибка.";
-    }
-
-    const message =
-      String(error.message || "").toLowerCase();
-
-
-    if(message.includes("user already registered")){
-      return "Этот email уже зарегистрирован.";
-    }
-
-
-    if(message.includes("invalid login credentials")){
-      return "Неверный email или пароль.";
-    }
-
-
-    if(message.includes("email not confirmed")){
-      return "Сначала подтвердите email через письмо.";
-    }
-
-
-    if(message.includes("password should be at least")){
-      return "Пароль слишком короткий.";
-    }
-
-
-    if(message.includes("invalid email")){
-      return "Введите корректный email.";
-    }
-
-
-    if(message.includes("rate limit")){
-      return "Слишком много запросов. Попробуйте позже.";
-    }
-
-
-    return error.message || "Произошла ошибка.";
+  if(
+    message.includes(
+      "invalid login credentials"
+    )
+  ){
+    return "Неверный email или пароль.";
   }
 
 
-  /* =================================
-     REGISTER
-  ================================= */
-
-  async function registerUser(){
-
-    const name =
-      document
-        .getElementById("registerName")
-        .value
-        .trim();
+  if(
+    message.includes(
+      "email not confirmed"
+    )
+  ){
+    return "Не удалось войти в аккаунт.";
+  }
 
 
-    const email =
-      document
-        .getElementById("registerEmail")
-        .value
-        .trim();
+  if(
+    message.includes(
+      "password should be at least"
+    )
+  ){
+    return "Пароль слишком короткий.";
+  }
 
 
-    const password =
-      document
-        .getElementById("registerPassword")
-        .value;
+  if(
+    message.includes(
+      "invalid email"
+    )
+  ){
+    return "Введите корректный email.";
+  }
 
 
-    const password2 =
-      document
-        .getElementById("registerPassword2")
-        .value;
+  if(
+    message.includes(
+      "rate limit"
+    )
+  ){
+    return "Слишком много запросов. Попробуйте позже.";
+  }
 
+
+  return error.message ||
+    "Произошла ошибка.";
+}
+
+
+/* =========================
+   REGISTER
+========================= */
+
+async function registerUser(){
+
+  const name =
+    document
+      .getElementById("registerName")
+      .value
+      .trim();
+
+
+  const email =
+    document
+      .getElementById("registerEmail")
+      .value
+      .trim();
+
+
+  const password =
+    document
+      .getElementById("registerPassword")
+      .value;
+
+
+  const password2 =
+    document
+      .getElementById("registerPassword2")
+      .value;
+
+
+  setMessage(
+    "registerMessage",
+    ""
+  );
+
+
+  if(!name){
 
     setMessage(
       "registerMessage",
-      ""
+      "Введите имя пользователя.",
+      "error"
     );
 
-
-    if(!name){
-
-      setMessage(
-        "registerMessage",
-        "Введите имя пользователя.",
-        "error"
-      );
-
-      return;
-    }
-
-
-    if(name.length < 3){
-
-      setMessage(
-        "registerMessage",
-        "Имя должно содержать минимум 3 символа.",
-        "error"
-      );
-
-      return;
-    }
-
-
-    if(!email){
-
-      setMessage(
-        "registerMessage",
-        "Введите email.",
-        "error"
-      );
-
-      return;
-    }
-
-
-    if(password.length < 6){
-
-      setMessage(
-        "registerMessage",
-        "Пароль должен содержать минимум 6 символов.",
-        "error"
-      );
-
-      return;
-    }
-
-
-    if(password !== password2){
-
-      setMessage(
-        "registerMessage",
-        "Пароли не совпадают.",
-        "error"
-      );
-
-      return;
-    }
-
-
-    const button =
-      document.getElementById("registerSubmit");
-
-
-    button.disabled = true;
-
-    button.textContent =
-      "Создание...";
-
-
-    try{
-
-      const {
-        data,
-        error
-      } =
-        await supabaseClient.auth.signUp({
-
-          email: email,
-
-          password: password,
-
-          options: {
-
-            data: {
-              username: name
-            },
-
-            emailRedirectTo:
-              window.location.origin
-
-          }
-
-        });
-
-
-      if(error){
-
-        console.error(
-          "REGISTER ERROR:",
-          error
-        );
-
-        setMessage(
-          "registerMessage",
-          getAuthError(error),
-          "error"
-        );
-
-        return;
-      }
-
-
-      if(data.user && !data.session){
-
-        setMessage(
-          "registerMessage",
-          "Аккаунт создан! Проверьте почту и подтвердите email.",
-          "success"
-        );
-
-      }else{
-
-        setMessage(
-          "registerMessage",
-          "Аккаунт успешно создан!",
-          "success"
-        );
-
-
-        setTimeout(
-          () => {
-
-            closeAuth(
-              "registerModal"
-            );
-
-            clearRegisterForm();
-
-          },
-          1200
-        );
-
-      }
-
-    }finally{
-
-      button.disabled = false;
-
-      button.textContent =
-        "Создать аккаунт";
-
-    }
-
+    return;
   }
 
 
-  /* =================================
-     LOGIN
-  ================================= */
-
-  async function loginUser(){
-
-    const email =
-      document
-        .getElementById("loginEmail")
-        .value
-        .trim();
-
-
-    const password =
-      document
-        .getElementById("loginPassword")
-        .value;
-
+  if(name.length < 3){
 
     setMessage(
-      "loginMessage",
-      ""
+      "registerMessage",
+      "Имя должно содержать минимум 3 символа.",
+      "error"
     );
 
-
-    if(!email || !password){
-
-      setMessage(
-        "loginMessage",
-        "Заполните все поля.",
-        "error"
-      );
-
-      return;
-    }
-
-
-    const button =
-      document.getElementById("loginSubmit");
-
-
-    button.disabled = true;
-
-    button.textContent =
-      "Вход...";
-
-
-    try{
-
-      const {
-        data,
-        error
-      } =
-        await supabaseClient.auth.signInWithPassword({
-
-          email: email,
-
-          password: password
-
-        });
-
-
-      if(error){
-
-        console.error(
-          "LOGIN ERROR:",
-          error
-        );
-
-        setMessage(
-          "loginMessage",
-          getAuthError(error),
-          "error"
-        );
-
-        return;
-      }
-
-
-      setMessage(
-        "loginMessage",
-        "Вы успешно вошли!",
-        "success"
-      );
-
-
-      updateAuthUI(
-        data.user
-      );
-
-
-      setTimeout(
-        () => {
-
-          closeAuth(
-            "loginModal"
-          );
-
-          clearLoginForm();
-
-        },
-        700
-      );
-
-    }finally{
-
-      button.disabled = false;
-
-      button.textContent =
-        "Войти";
-
-    }
-
+    return;
   }
 
 
-  /* =================================
-     LOGOUT
-  ================================= */
+  if(!email){
 
-  async function logoutUser(){
+    setMessage(
+      "registerMessage",
+      "Введите email.",
+      "error"
+    );
+
+    return;
+  }
+
+
+  if(password.length < 6){
+
+    setMessage(
+      "registerMessage",
+      "Пароль должен содержать минимум 6 символов.",
+      "error"
+    );
+
+    return;
+  }
+
+
+  if(password !== password2){
+
+    setMessage(
+      "registerMessage",
+      "Пароли не совпадают.",
+      "error"
+    );
+
+    return;
+  }
+
+
+  const button =
+    document.getElementById(
+      "registerSubmit"
+    );
+
+
+  button.disabled = true;
+
+  button.textContent =
+    "Создание...";
+
+
+  try{
+
+    /*
+      Создаём пользователя.
+      username сохраняем в metadata.
+    */
 
     const {
+      data,
       error
     } =
-      await supabaseClient.auth.signOut();
+      await supabaseClient.auth.signUp({
+
+        email:email,
+
+        password:password,
+
+        options:{
+          data:{
+            username:name
+          }
+        }
+
+      });
 
 
     if(error){
 
       console.error(
-        "LOGOUT ERROR:",
+        "REGISTER ERROR:",
         error
       );
 
+      setMessage(
+        "registerMessage",
+        getAuthError(error),
+        "error"
+      );
+
       return;
     }
 
 
-    updateAuthUI(
-      null
+    /*
+      НЕ показываем сообщение
+      про подтверждение email.
+    */
+
+    setMessage(
+      "registerMessage",
+      "Аккаунт успешно создан!",
+      "success"
     );
 
 
-    closeAuth(
-      "accountModal"
-    );
+    /*
+      Если Supabase вернул сессию,
+      сразу показываем кабинет.
+    */
 
-  }
+    if(data.user && data.session){
 
-
-  /* =================================
-     AUTH UI
-  ================================= */
-
-  function updateAuthUI(user){
-
-    const loginButton =
-      document.getElementById(
-        "loginButton"
+      updateAuthUI(
+        data.user
       );
 
+      setTimeout(
+        () => {
 
-    const registerButton =
-      document.getElementById(
-        "registerButton"
+          closeAuth(
+            "registerModal"
+          );
+
+          clearRegisterForm();
+
+          openAccount();
+
+        },
+        700
       );
 
-
-    const accountButton =
-      document.getElementById(
-        "accountButton"
-      );
-
-
-    if(
-      !loginButton ||
-      !registerButton ||
-      !accountButton
-    ){
       return;
     }
 
 
-    if(user){
+    /*
+      Если Supabase всё ещё требует
+      подтверждение email, не показываем
+      пользователю старое сообщение.
+    */
 
-      loginButton.style.display =
-        "none";
+    setTimeout(
+      () => {
 
-
-      registerButton.style.display =
-        "none";
-
-
-      accountButton.style.display =
-        "inline-flex";
-
-
-      const username =
-        user.user_metadata &&
-        user.user_metadata.username
-          ? user.user_metadata.username
-          : "Пользователь";
-
-
-      const email =
-        user.email || "—";
-
-
-      document.getElementById(
-        "accountName"
-      ).textContent =
-        username;
-
-
-      document.getElementById(
-        "accountEmail"
-      ).textContent =
-        email;
-
-    }else{
-
-      loginButton.style.display =
-        "inline-flex";
-
-
-      registerButton.style.display =
-        "inline-flex";
-
-
-      accountButton.style.display =
-        "none";
-
-
-      document.getElementById(
-        "accountName"
-      ).textContent =
-        "—";
-
-
-      document.getElementById(
-        "accountEmail"
-      ).textContent =
-        "—";
-
-    }
-
-  }
-
-
-  /* =================================
-     INITIAL AUTH
-  ================================= */
-
-  async function initAuth(){
-
-    const {
-      data: {
-        session
-      }
-    } =
-      await supabaseClient.auth.getSession();
-
-
-    updateAuthUI(
-      session
-        ? session.user
-        : null
-    );
-
-
-    supabaseClient.auth.onAuthStateChange(
-      (
-        event,
-        session
-      ) => {
-
-        updateAuthUI(
-          session
-            ? session.user
-            : null
+        closeAuth(
+          "registerModal"
         );
 
-      }
+        clearRegisterForm();
+
+      },
+      1200
     );
+
+
+  }catch(error){
+
+    console.error(
+      "REGISTER EXCEPTION:",
+      error
+    );
+
+    setMessage(
+      "registerMessage",
+      "Ошибка регистрации.",
+      "error"
+    );
+
+  }finally{
+
+    button.disabled = false;
+
+    button.textContent =
+      "Создать аккаунт";
 
   }
 
+}
 
-  /* =================================
-     CLEAR FORMS
-  ================================= */
 
-  function clearLoginForm(){
+/* =========================
+   LOGIN
+========================= */
 
+async function loginUser(){
+
+  const email =
+    document
+      .getElementById("loginEmail")
+      .value
+      .trim();
+
+
+  const password =
+    document
+      .getElementById("loginPassword")
+      .value;
+
+
+  setMessage(
+    "loginMessage",
+    ""
+  );
+
+
+  if(!email || !password){
+
+    setMessage(
+      "loginMessage",
+      "Заполните все поля.",
+      "error"
+    );
+
+    return;
+  }
+
+
+  const button =
     document.getElementById(
-      "loginEmail"
-    ).value = "";
+      "loginSubmit"
+    );
 
 
-    document.getElementById(
-      "loginPassword"
-    ).value = "";
+  button.disabled = true;
+
+  button.textContent =
+    "Вход...";
+
+
+  try{
+
+    const {
+      data,
+      error
+    } =
+      await supabaseClient.auth.signInWithPassword({
+
+        email:email,
+
+        password:password
+
+      });
+
+
+    if(error){
+
+      console.error(
+        "LOGIN ERROR:",
+        error
+      );
+
+      setMessage(
+        "loginMessage",
+        getAuthError(error),
+        "error"
+      );
+
+      return;
+    }
 
 
     setMessage(
       "loginMessage",
-      ""
+      "Вы успешно вошли!",
+      "success"
     );
 
-  }
 
-
-  function clearRegisterForm(){
-
-    document.getElementById(
-      "registerName"
-    ).value = "";
-
-
-    document.getElementById(
-      "registerEmail"
-    ).value = "";
-
-
-    document.getElementById(
-      "registerPassword"
-    ).value = "";
-
-
-    document.getElementById(
-      "registerPassword2"
-    ).value = "";
-
-
-    setMessage(
-      "registerMessage",
-      ""
+    updateAuthUI(
+      data.user
     );
 
-  }
 
+    setTimeout(
+      () => {
 
-  /* =================================
-     CLOSE BY CLICKING OUTSIDE
-  ================================= */
-
-  document
-    .querySelectorAll(".auth-overlay")
-    .forEach(
-      (overlay) => {
-
-        overlay.addEventListener(
-          "click",
-          (event) => {
-
-            if(
-              event.target === overlay
-            ){
-
-              overlay.classList.remove(
-                "active"
-              );
-
-            }
-
-          }
+        closeAuth(
+          "loginModal"
         );
 
-      }
+        clearLoginForm();
+
+        openAccount();
+
+      },
+      700
     );
 
 
-  /* =================================
-     ESCAPE KEY
-  ================================= */
+  }catch(error){
 
-  document.addEventListener(
-    "keydown",
-    (event) => {
+    console.error(
+      "LOGIN EXCEPTION:",
+      error
+    );
 
-      if(event.key !== "Escape"){
-        return;
-      }
+    setMessage(
+      "loginMessage",
+      "Ошибка входа.",
+      "error"
+    );
+
+  }finally{
+
+    button.disabled = false;
+
+    button.textContent =
+      "Войти";
+
+  }
+
+}
 
 
-      document
-        .querySelectorAll(
-          ".auth-overlay.active"
-        )
-        .forEach(
-          (modal) => {
+/* =========================
+   LOGOUT
+========================= */
 
-            modal.classList.remove(
+async function logoutUser(){
+
+  const {
+    error
+  } =
+    await supabaseClient.auth.signOut();
+
+
+  if(error){
+
+    console.error(
+      "LOGOUT ERROR:",
+      error
+    );
+
+    return;
+  }
+
+
+  updateAuthUI(
+    null
+  );
+
+
+  closeAuth(
+    "accountModal"
+  );
+
+}
+
+
+/* =========================
+   UI
+========================= */
+
+function updateAuthUI(user){
+
+  const loginButton =
+    document.getElementById(
+      "loginButton"
+    );
+
+
+  const registerButton =
+    document.getElementById(
+      "registerButton"
+    );
+
+
+  const accountButton =
+    document.getElementById(
+      "accountButton"
+    );
+
+
+  if(
+    !loginButton ||
+    !registerButton ||
+    !accountButton
+  ){
+    return;
+  }
+
+
+  if(user){
+
+    loginButton.style.display =
+      "none";
+
+    registerButton.style.display =
+      "none";
+
+    accountButton.style.display =
+      "inline-flex";
+
+
+    const username =
+      user.user_metadata &&
+      user.user_metadata.username
+        ? user.user_metadata.username
+        : "Пользователь";
+
+
+    const email =
+      user.email || "—";
+
+
+    document.getElementById(
+      "accountName"
+    ).textContent =
+      username;
+
+
+    document.getElementById(
+      "accountEmail"
+    ).textContent =
+      email;
+
+  }else{
+
+    loginButton.style.display =
+      "inline-flex";
+
+    registerButton.style.display =
+      "inline-flex";
+
+    accountButton.style.display =
+      "none";
+
+
+    document.getElementById(
+      "accountName"
+    ).textContent =
+      "—";
+
+
+    document.getElementById(
+      "accountEmail"
+    ).textContent =
+      "—";
+
+  }
+
+}
+
+
+/* =========================
+   INIT
+========================= */
+
+async function initAuth(){
+
+  const {
+    data:{
+      session
+    }
+  } =
+    await supabaseClient.auth.getSession();
+
+
+  updateAuthUI(
+    session
+      ? session.user
+      : null
+  );
+
+
+  supabaseClient.auth.onAuthStateChange(
+    (
+      event,
+      session
+    ) => {
+
+      updateAuthUI(
+        session
+          ? session.user
+          : null
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================
+   CLEAR FORMS
+========================= */
+
+function clearLoginForm(){
+
+  document.getElementById(
+    "loginEmail"
+  ).value = "";
+
+  document.getElementById(
+    "loginPassword"
+  ).value = "";
+
+  setMessage(
+    "loginMessage",
+    ""
+  );
+
+}
+
+
+function clearRegisterForm(){
+
+  document.getElementById(
+    "registerName"
+  ).value = "";
+
+  document.getElementById(
+    "registerEmail"
+  ).value = "";
+
+  document.getElementById(
+    "registerPassword"
+  ).value = "";
+
+  document.getElementById(
+    "registerPassword2"
+  ).value = "";
+
+  setMessage(
+    "registerMessage",
+    ""
+  );
+
+}
+
+
+/* =========================
+   CLOSE OUTSIDE
+========================= */
+
+document
+  .querySelectorAll(
+    ".auth-overlay"
+  )
+  .forEach(
+    (overlay) => {
+
+      overlay.addEventListener(
+        "click",
+        (event) => {
+
+          if(
+            event.target === overlay
+          ){
+
+            overlay.classList.remove(
               "active"
             );
 
           }
-        );
+
+        }
+      );
 
     }
   );
 
 
-  /* =================================
-     START
-  ================================= */
+/* =========================
+   ESC
+========================= */
 
-  initAuth();
+document.addEventListener(
+  "keydown",
+  (event) => {
+
+    if(event.key !== "Escape"){
+      return;
+    }
+
+    document
+      .querySelectorAll(
+        ".auth-overlay.active"
+      )
+      .forEach(
+        (modal) => {
+
+          modal.classList.remove(
+            "active"
+          );
+
+        }
+      );
+
+  }
+);
+
+
+/* START */
+
+initAuth();
 
 </script>
 
 </body>
 </html>
-      
